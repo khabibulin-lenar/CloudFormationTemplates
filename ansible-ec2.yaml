@@ -4,7 +4,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       AvailabilityZone: us-east-1d
-      ImageID: ami-06640050dc3f556bb
+      ImageId: ami-06640050dc3f556bb
       InstanceType: m5.xlarge
       KeyName: aws-lk
       SecurityGroups:
