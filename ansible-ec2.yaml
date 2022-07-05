@@ -13,7 +13,10 @@ Resources:
     Type: AWS::EC2::EIP
     Properties:
       InstanceId: !Ref MyInstance
-  KeyName: aws-lk
+  Type: AWS::EC2::KeyPair
+    Properties: 
+      KeyName: ansible-lk
+      PublicKeyMaterial: aws-lk
   SSHSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
