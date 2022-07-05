@@ -6,6 +6,7 @@ Resources:
       AvailabilityZone: us-east-1d
       ImageID: ami-06640050dc3f556bb
       InstanceType: m5.xlarge
+      KeyName: aws-lk
       SecurityGroups:
         - !Ref SSHSecurityGroup
         - !Ref ServerSecurityGroup
@@ -13,7 +14,6 @@ Resources:
     Type: AWS::EC2::EIP
     Properties:
       InstanceId: !Ref MyInstance
-  KeyName: aws-lk
   SSHSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
